@@ -6,21 +6,19 @@
 #    By: pepie <pepie@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/07/01 16:22:42 by pepie             #+#    #+#              #
-#    Updated: 2021/07/12 10:55:42 by pepie            ###   ########.fr        #
+#    Updated: 2024/11/08 10:46:00 by pepie            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		=	phonebook
+NAME		=	account
 
 CPP			=	c++ -Wall -Wextra -Werror -std=c++98
 INCLUDE 	=	./includes/
 CFLAGS		=	-Wall -Werror -Wextra -g -I$(INCLUDE) -I/usr/X11/includes
 RM			=	rm -f
 OBJ_DIR		=	objs
-SRCS		=	main.cpp \
-				Contact.cpp \
-				PhoneBook.cpp
-
+SRCS		=	tests.cpp \
+				Account.cpp
 
 OBJS		=	$(SRCS:/%.cpp=%.o)
 
